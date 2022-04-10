@@ -31,7 +31,7 @@ export default function AutoGrid() {
         </Grid>
         <Grid item xs={12} sm>
           <Item sx={{ padding: 0, width: "100%" }}>
-            <LeftSidebar />
+            <RightSidebar />
           </Item>
         </Grid>
       </Grid>

@@ -125,11 +125,26 @@ const ResponsiveAppBar = () => {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
+            <div className="flex items-center">
+              <div className="mr-4">
+                <Button
+                  size="small"
+                  className="bg-blue-700"
+                  variant="contained">
+                  Bank
+                </Button>
+              </div>
+              <div className="p-0 mx-3">
+                <span className="block">Player1</span>
+                <span className="block">$300.00</span>
+              </div>
+              <Tooltip title="Open settings">
+                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                  <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                </IconButton>
+              </Tooltip>
+            </div>
+
             <Menu
               sx={{ mt: "45px" }}
               id="menu-appbar"
