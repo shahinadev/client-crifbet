@@ -5,9 +5,5 @@ const nextConfig = {
     domains: ["media.geeksforgeeks.org"],
   },
 };
-const withImages = require("next-images");
-const withTM = require("next-transpile-modules")(["@madzadev/image-slider"]);
-
-module.exports = withImages(withTM());
 
 module.exports = nextConfig;
