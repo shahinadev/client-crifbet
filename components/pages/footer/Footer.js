@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image"
+import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="bg-slate-600">
@@ -11,9 +11,9 @@ const Footer = () => {
         className="mx-auto py-7"
       />
       <p className="text-1xl px-32 sm:px-6 text-slate-300">
-        Bettings are designed to entertain. Keep in mind that you're taking risk
-        of losing money when you bet. Please don't spend more than you can
-        afford to lose. May the odds always be in your favor.
+        Bettings are designed to entertain. Keep in mind that youre taking risk
+        of losing money when you bet. Please dont spend more than you can afford
+        to lose. May the odds always be in your favor.
       </p>
       <p className="text-1xl px-32 text-slate-300 my-5">
         &copy;2022 Crifbet is Cyprus operated professional online gaming
