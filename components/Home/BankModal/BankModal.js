@@ -51,11 +51,9 @@ const style = {
   p: 4,
 };
 
-export default function BankModal({ handleOpen, handleClose }) {
-  const [open, setOpen] = React.useState(false);
+export default function BankModal({ open }) {
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
       <Modal
         aria-labelledby="spring-modal-title"
         aria-describedby="spring-modal-description"

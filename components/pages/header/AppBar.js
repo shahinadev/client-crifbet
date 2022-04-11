@@ -19,7 +19,7 @@ import Image from "next/image";
 // ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
-const ResponsiveAppBar = () => {
+const ResponsiveAppBar = ({setOpen,open}) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -112,7 +112,7 @@ const ResponsiveAppBar = () => {
               display: { xs: "none", md: "flex" },
               justifyContent: "center",
             }}>
-            <Button
+            <Button 
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}>
               Sports
@@ -127,7 +127,7 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <div className="flex items-center">
               <div className="mr-4">
-                <Button
+                <Button onClick={()=>setOpen(!open)}
                   size="small"
                   className="bg-blue-700"
                   variant="contained">

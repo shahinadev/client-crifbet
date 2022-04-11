@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import GridComp from "../Home/GridComp";
 const Home = () => {
-  return <GridComp />;
+  return (
+    <>
+      <GridComp />
+    </>
+  );
 };
 
 export default Home;

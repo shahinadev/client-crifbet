@@ -15,7 +15,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-export default function AutoGrid() {
+export default function AutoGrid({setOpen}) {
   return (
     <Box sx={{ flexGrow: 1, mt: 8.8 }}>
       <Grid container spacing={1}>
